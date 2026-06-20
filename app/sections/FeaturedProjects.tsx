@@ -23,7 +23,6 @@ const projects = [
     technologies: ["Arduino", "C++", "Sensors", "Embedded Systems"],
     github: "https://github.com/serinenadabenmissi-design/smart-pen-.git",
     demo: null,
-    image: "/projects/smart-pen.png",
     featured: false,
   },
   {
@@ -34,7 +33,6 @@ const projects = [
     technologies: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/serinenadabenmissi-design/SoCode.git",
     demo: null,
-    image: "/projects/socode.png",
     featured: false,
   },
   {
@@ -45,7 +43,6 @@ const projects = [
     technologies: ["Flutter", "Dart", "BLoC"],
     github: "https://github.com/serinenadabenmissi-design/secure-vault-app-flutter.git",
     demo: null,
-    image: "/projects/secure-vault.png",
     featured: false,
   },
   {
@@ -56,7 +53,6 @@ const projects = [
     technologies: ["Python", "Machine Learning", "NLP"],
     github: "https://github.com/serinenadabenmissi-design/machine-learning-fake-news-detection.git",
     demo: "",
-    image: "/projects/fake-news.png",
     featured: false,
   },
   {
@@ -67,7 +63,6 @@ const projects = [
     technologies: ["Flutter", "Dart", "IoT"],
     github: "https://github.com/serinenadabenmissi-design/smart-home-flutter.git",
     demo: null,
-    image: "/projects/smart-home.png",
     featured: false,
   },
   {
@@ -78,10 +73,20 @@ const projects = [
     technologies: ["Arduino", "IoT"],
     github: "https://github.com/serinenadabenmissi-design/ardouino-projects.git/concour_smart_door.ino",
     demo: null,
-    image: "/projects/smart-door.png",
     featured: false,
   },
 ];
+
+// Emoji mapping for non-featured projects
+const getEmoji = (title: string) => {
+  if (title.includes("Smart Pen")) return "✏️";
+  if (title.includes("SoCode")) return "💻";
+  if (title.includes("Secure")) return "🔐";
+  if (title.includes("Fake")) return "📰";
+  if (title.includes("Smart Home")) return "🏠";
+  if (title.includes("Smart Door")) return "🚪";
+  return "🚀";
+};
 
 export default function FeaturedProjects() {
   const featuredProject = projects.find((p) => p.featured);
@@ -106,7 +111,7 @@ export default function FeaturedProjects() {
           </h2>
         </motion.div>
 
-        {/* Featured Project */}
+        {/* Featured Project - WITH IMAGE */}
         {featuredProject && (
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -116,7 +121,7 @@ export default function FeaturedProjects() {
             className="mb-20"
           >
             <div className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-red/30 transition-all duration-500">
-              {/* Image */}
+              {/* IMAGE for featured project */}
               <div className="aspect-[16/9] relative overflow-hidden bg-gradient-to-br from-red-muted/20 to-background">
                 <img
                   src={featuredProject.image}
@@ -171,7 +176,7 @@ export default function FeaturedProjects() {
           </motion.div>
         )}
 
-        {/* Other Projects Grid */}
+        {/* Other Projects - WITH EMOJIS (no images) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {otherProjects.map((project, index) => (
             <motion.div
@@ -182,14 +187,14 @@ export default function FeaturedProjects() {
               transition={{ duration: 0.6, delay: index * 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="group relative rounded-xl overflow-hidden bg-card border border-border hover:border-red/30 transition-all duration-300"
             >
-              {/* Image */}
-              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-red-muted/20 to-background">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* EMOJI for non-featured projects (original style) */}
+              <div className="aspect-[16/10] relative bg-gradient-to-br from-red-muted/20 to-background flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-3 rounded-xl bg-red/10 border border-red/20 flex items-center justify-center">
+                    <span className="text-2xl">{getEmoji(project.title)}</span>
+                  </div>
+                  <p className="text-muted-foreground text-xs">Add screenshot</p>
+                </div>
               </div>
               
               <div className="p-6">
