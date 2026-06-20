@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
+    year: "2023",
+      title: "Started IoT Projects",
+      description: "Dived into IoT with Arduino, creating smart devices and learning embedded programming.",
+    },
+    
+  {
     year: "2024",
     title: "Started Web Development",
     description: "Began learning the fundamentals of web development and modern frontend technologies.",
@@ -15,19 +21,26 @@ const milestones = [
   },
   {
     year: "2025",
-    title: "Started Flutter Development",
-    description: "Expanded into mobile development with Flutter and Dart.",
-  },
-  {
-    year: "2025",
-    title: "Built Smart Home App",
-    description: "Created a Flutter-based dashboard for IoT device management.",
+    title: "Started AI Projects",
+    description: "Explored AI concepts and built projects utilizing machine learning and natural language processing.",
   },
   {
     year: "2026",
     title: "AI Dietary Consultation Platform",
     description: "Developed an AI-powered platform for personalized nutrition guidance.",
   },
+
+  {
+    year: "2026",
+    title: "Started Flutter Development",
+    description: "Expanded into mobile development with Flutter and Dart.",
+  },
+  {
+    year: "2026",
+    title: "Built Smart Home App",
+    description: "Created a Flutter-based dashboard for IoT device management.",
+  },
+  
 ];
 
 export default function Journey() {

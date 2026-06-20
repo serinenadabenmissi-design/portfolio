@@ -63,7 +63,7 @@ export default function Hero() {
           <ArrowDown size={16} className="group-hover:translate-y-0.5 transition-transform" />
         </a>
         <a
-          href="https://github.com/serinenadabenmissi-design/serine-portfolio"
+          href="https://github.com/serinenadabenmissi-design/portfolio.git"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-8 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
