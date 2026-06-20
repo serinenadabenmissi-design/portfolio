@@ -6,7 +6,6 @@ const technologies = [
   { name: "Flutter", icon: "📱" },
   { name: "Dart", icon: "🎯" },
   { name: "PHP", icon: "🐘" },
-  { name: "Laravel", icon: "🚀" },
   { name: "MySQL", icon: "🗄️" },
   { name: "Python", icon: "🐍" },
   { name: "JavaScript", icon: "⚡" },

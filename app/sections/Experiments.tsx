@@ -6,10 +6,13 @@ import { ArrowUpRight } from "lucide-react";
 const experiments = [
   { name: "Snake Game", tech: "JavaScript" },
   { name: "Ping Pong Game", tech: "JavaScript" },
-  { name: "Stopwatch App", tech: "Flutter" },
+  { name: "Stopwatch App", tech: "JavaScript" },
   { name: "Rock Paper Scissors", tech: "JavaScript" },
   { name: "JavaScript Course Projects", tech: "JavaScript" },
-  { name: "Flutter Exercises", tech: "Flutter" },
+  { name: "Flutter Projects", tech: "Flutter" },
+  { name: "Python Projects", tech: "Python" },
+  { name: "Arduino Projects", tech: "Arduino" },
+ 
 ];
 
 export default function Experiments() {

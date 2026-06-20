@@ -6,15 +6,15 @@ import { Mail, Code2, Link, FileText } from "lucide-react";
 const contactLinks = [
   {
     name: "Email",
-    value: "serine@example.com",
+    value: "benmissi.dev@gmail.com",
     icon: Mail,
-    href: "mailto:serine@example.com",
+    href: "mailto: benmissi.dev@gmail.com",
   },
   {
     name: "GitHub",
     value: "github.com/serine",
     icon: Code2,
-    href: "https://github.com",
+    href: "https://github.com/serinenadabenmissi-design",
   },
   {
     name: "LinkedIn",
@@ -22,12 +22,7 @@ const contactLinks = [
     icon: Link,
     href: "https://linkedin.com",
   },
-  {
-    name: "CV",
-    value: "Download Resume",
-    icon: FileText,
-    href: "#",
-  },
+
 ];
 
 export default function Contact() {

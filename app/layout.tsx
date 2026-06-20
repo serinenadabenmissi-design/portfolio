@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Serine Benmissi",
   },
   description:
-    "Software Engineering Student specializing in Flutter, Web Development, AI, and IoT. Building impactful digital solutions.",
+    "Software Engineering Student specializing in AI, Web Development, and IoT. Building impactful digital solutions.",
   keywords: [
     "Serine Benmissi",
     "Software Engineer",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     siteName: "Serine Benmissi Portfolio",
     title: "Serine Benmissi — Software Engineer",
     description:
-      "Software Engineering Student specializing in Flutter, Web Development, AI, and IoT.",
+      "Software Engineering Student specializing in AI, Web Development, and IoT.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Serine Benmissi — Software Engineer",
     description:
-      "Software Engineering Student specializing in Flutter, Web Development, AI, and IoT.",
+      "Software Engineering Student specializing in AI, Web Development, and IoT.",
   },
   robots: {
     index: true,

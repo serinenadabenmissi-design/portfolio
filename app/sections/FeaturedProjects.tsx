@@ -6,12 +6,12 @@ import { ExternalLink, Code2, ArrowUpRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "AI Dietary Consultation Platform",
+    title: "AI Dietary Platform",
     description:
       "An AI-powered dietary consultation platform featuring calorie tracking, personalized nutrition guidance, and intelligent recommendations.",
-    technologies: ["Laravel", "PHP", "MySQL", "AI Integration"],
-    github: "#",
-    demo: "#",
+    technologies: ["Django", "Python", "Deep Learning", "NLP"],
+    github: "https://github.com/serinenadabenmissi-design/AI_nutritionist.git",
+    demo: "https://ai-nutritionist-lsha.onrender.com",
     featured: true,
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description:
       "An educational smart pen designed to enhance student learning through digital note interaction and intelligent features.",
     technologies: ["Arduino", "C++", "Sensors", "Embedded Systems"],
-    github: "#",
+    github: "https://github.com/serinenadabenmissi-design/smart-pen-.git",
     demo: null,
     featured: false,
   },
@@ -30,8 +30,8 @@ const projects = [
     description:
       "A collaborative coding and learning platform built for students and developers.",
     technologies: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/serinenadabenmissi-design/SoCode.git",
+    demo: null,
     featured: false,
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     description:
       "A secure Flutter application implementing authentication, profile management, and state management using the BLoC architecture.",
     technologies: ["Flutter", "Dart", "BLoC"],
-    github: "#",
+    github: "https://github.com/serinenadabenmissi-design/secure-vault-app-flutter.git",
     demo: null,
     featured: false,
   },
@@ -50,8 +50,8 @@ const projects = [
     description:
       "A machine learning project designed to identify and classify fake news articles using natural language processing techniques.",
     technologies: ["Python", "Machine Learning", "NLP"],
-    github: "#",
-    demo: null,
+    github: "https://github.com/serinenadabenmissi-design/machine-learning-fake-news-detection.git",
+    demo: "",
     featured: false,
   },
   {
@@ -60,8 +60,18 @@ const projects = [
     description:
       "A Flutter-based smart home dashboard for monitoring and controlling connected devices.",
     technologies: ["Flutter", "Dart", "IoT"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/serinenadabenmissi-design/smart-home-flutter.git",
+    demo: null,
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Smart Door",
+    description:
+      "An IoT-based smart door system that allows users to control access and monitor entry points remotely.",
+    technologies: ["Arduino", "IoT"],
+    github: "https://github.com/serinenadabenmissi-design/ardouino-projects.git/concour_smart_door.ino",
+    demo: null,
     featured: false,
   },
 ];

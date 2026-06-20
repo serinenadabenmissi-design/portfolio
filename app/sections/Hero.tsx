@@ -63,7 +63,7 @@ export default function Hero() {
           <ArrowDown size={16} className="group-hover:translate-y-0.5 transition-transform" />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/serinenadabenmissi-design/serine-portfolio"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-8 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
@@ -72,11 +72,11 @@ export default function Hero() {
           GitHub
         </a>
         <a
-          href="#"
+          href="mailto:benmissi.dev@gmail.com"
           className="flex items-center gap-2 px-8 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
         >
           <FileText size={16} />
-          Download CV
+          Gmail
         </a>
       </motion.div>
 
