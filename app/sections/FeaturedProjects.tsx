@@ -12,6 +12,7 @@ const projects = [
     technologies: ["Django", "Python", "Deep Learning", "NLP"],
     github: "https://github.com/serinenadabenmissi-design/AI_nutritionist.git",
     demo: "https://ai-nutritionist-lsha.onrender.com",
+    image: "/projects/ai-nutritionist.png",
     featured: true,
   },
   {
@@ -22,6 +23,7 @@ const projects = [
     technologies: ["Arduino", "C++", "Sensors", "Embedded Systems"],
     github: "https://github.com/serinenadabenmissi-design/smart-pen-.git",
     demo: null,
+    image: "/projects/smart-pen.png",
     featured: false,
   },
   {
@@ -32,6 +34,7 @@ const projects = [
     technologies: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/serinenadabenmissi-design/SoCode.git",
     demo: null,
+    image: "/projects/socode.png",
     featured: false,
   },
   {
@@ -42,6 +45,7 @@ const projects = [
     technologies: ["Flutter", "Dart", "BLoC"],
     github: "https://github.com/serinenadabenmissi-design/secure-vault-app-flutter.git",
     demo: null,
+    image: "/projects/secure-vault.png",
     featured: false,
   },
   {
@@ -52,6 +56,7 @@ const projects = [
     technologies: ["Python", "Machine Learning", "NLP"],
     github: "https://github.com/serinenadabenmissi-design/machine-learning-fake-news-detection.git",
     demo: "",
+    image: "/projects/fake-news.png",
     featured: false,
   },
   {
@@ -62,6 +67,7 @@ const projects = [
     technologies: ["Flutter", "Dart", "IoT"],
     github: "https://github.com/serinenadabenmissi-design/smart-home-flutter.git",
     demo: null,
+    image: "/projects/smart-home.png",
     featured: false,
   },
   {
@@ -72,14 +78,19 @@ const projects = [
     technologies: ["Arduino", "IoT"],
     github: "https://github.com/serinenadabenmissi-design/ardouino-projects.git/concour_smart_door.ino",
     demo: null,
+    image: "/projects/smart-door.png",
     featured: false,
   },
 ];
 
 export default function FeaturedProjects() {
+  const featuredProject = projects.find((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
+
   return (
     <section id="projects" className="py-32 px-6">
       <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,66 +106,74 @@ export default function FeaturedProjects() {
           </h2>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-20"
-        >
-          <div className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-red/30 transition-all duration-500">
-            <div className="aspect-[16/9] relative bg-gradient-to-br from-red-muted/20 to-background flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-red/10 border border-red/20 flex items-center justify-center">
-                  <span className="text-3xl">🥗</span>
-                </div>
-                <p className="text-muted-foreground text-sm">Add your project screenshot here</p>
+        {/* Featured Project */}
+        {featuredProject && (
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-20"
+          >
+            <div className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-red/30 transition-all duration-500">
+              {/* Image */}
+              <div className="aspect-[16/9] relative overflow-hidden bg-gradient-to-br from-red-muted/20 to-background">
+                <img
+                  src={featuredProject.image}
+                  alt={featuredProject.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
-            </div>
-            <div className="p-8 md:p-10">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 text-xs font-medium bg-red text-white rounded-full">
-                  Featured Project
-                </span>
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-red-light transition-colors">
-                AI Dietary Consultation Platform
-              </h3>
-              <p className="text-lg text-muted-foreground mb-6 max-w-2xl">
-                An AI-powered dietary consultation platform featuring calorie tracking, personalized nutrition guidance, and intelligent recommendations.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                {["Laravel", "PHP", "MySQL", "AI Integration"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1.5 text-sm text-red-light bg-red-muted/20 rounded-lg border border-red-muted/30"
-                  >
-                    {tech}
+              
+              <div className="p-8 md:p-10">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="px-3 py-1 text-xs font-medium bg-red text-white rounded-full">
+                    Featured Project
                   </span>
-                ))}
-              </div>
-              <div className="flex gap-4">
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-sm text-red-light hover:text-red transition-colors"
-                >
-                  <Code2 size={18} />
-                  Source Code
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-sm text-red-light hover:text-red transition-colors"
-                >
-                  <ExternalLink size={18} />
-                  Live Demo
-                </a>
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-red-light transition-colors">
+                  {featuredProject.title}
+                </h3>
+                <p className="text-lg text-muted-foreground mb-6 max-w-2xl">
+                  {featuredProject.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {featuredProject.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1.5 text-sm text-red-light bg-red-muted/20 rounded-lg border border-red-muted/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-4">
+                  <a
+                    href={featuredProject.github}
+                    className="flex items-center gap-2 text-sm text-red-light hover:text-red transition-colors"
+                  >
+                    <Code2 size={18} />
+                    Source Code
+                  </a>
+                  {featuredProject.demo && (
+                    <a
+                      href={featuredProject.demo}
+                      className="flex items-center gap-2 text-sm text-red-light hover:text-red transition-colors"
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        )}
 
+        {/* Other Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.filter((p) => !p.featured).map((project, index) => (
+          {otherProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 40 }}
@@ -163,20 +182,16 @@ export default function FeaturedProjects() {
               transition={{ duration: 0.6, delay: index * 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="group relative rounded-xl overflow-hidden bg-card border border-border hover:border-red/30 transition-all duration-300"
             >
-              <div className="aspect-[16/10] relative bg-gradient-to-br from-red-muted/20 to-background flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-3 rounded-xl bg-red/10 border border-red/20 flex items-center justify-center">
-                    <span className="text-2xl">
-                      {project.title.includes("Smart Pen") && "✏️"}
-                      {project.title.includes("SoCode") && "💻"}
-                      {project.title.includes("Secure") && "🔐"}
-                      {project.title.includes("Fake") && "📰"}
-                      {project.title.includes("Smart Home") && "🏠"}
-                    </span>
-                  </div>
-                  <p className="text-muted-foreground text-xs">Add screenshot</p>
-                </div>
+              {/* Image */}
+              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-red-muted/20 to-background">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
+              
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-red-light transition-colors flex items-center gap-2">
                   {project.title}
