@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   keywords: [
     "Serine Benmissi",
     "Software Engineer",
-    "Flutter Developer",
+   
     "Web Developer",
     "AI",
     "IoT",

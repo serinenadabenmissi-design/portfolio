@@ -8,21 +8,26 @@ const contactLinks = [
     name: "Email",
     value: "benmissi.dev@gmail.com",
     icon: Mail,
-    href: "mailto: benmissi.dev@gmail.com",
+    href: "mailto:benmissi.dev@gmail.com",
   },
   {
     name: "GitHub",
-    value: "github.com/serine",
+    value: "github.com/serinenadabenmissi-design",
     icon: Code2,
     href: "https://github.com/serinenadabenmissi-design",
   },
   {
     name: "LinkedIn",
-    value: "linkedin.com/in/serine",
+    value: "linkedin.com/in/ben-missi",
     icon: Link,
     href: "www.linkedin.com/in/ben-missi-993269419",
   },
-
+  {
+    name: "CV / Resume",
+    value: "Download CV",
+    icon: FileText,
+    href: "/cv.pdf", 
+  },
 ];
 
 export default function Contact() {

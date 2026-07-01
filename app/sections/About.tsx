@@ -29,7 +29,7 @@ export default function About() {
           className="space-y-6"
         >
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-            I am a Software Engineering student passionate about building impactful digital solutions.
+            I am a Full Stack Developer & AI Engineer and a Software Engineering student passionate about building impactful digital solutions.
           </p>
           <p className="text-base text-muted-foreground leading-relaxed">
             My interests include mobile development, backend engineering, artificial intelligence, and IoT systems. I enjoy transforming ideas into functional products while continuously learning new technologies.
