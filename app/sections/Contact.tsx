@@ -20,7 +20,7 @@ const contactLinks = [
     name: "LinkedIn",
     value: "linkedin.com/in/serine",
     icon: Link,
-    href: "https://linkedin.com",
+    href: "www.linkedin.com/in/ben-missi-993269419",
   },
 
 ];
