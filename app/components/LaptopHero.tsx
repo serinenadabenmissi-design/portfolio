@@ -84,7 +84,7 @@ export default function LaptopHero() {
                   transition={{ duration: 0.6, delay: 1.1 }}
                   className="text-zinc-500 text-xs md:text-sm font-mono"
                 >
-                  Flutter • Web • AI • IoT
+                  • Web • AI • IoT
                 </motion.p>
 
                 <motion.div

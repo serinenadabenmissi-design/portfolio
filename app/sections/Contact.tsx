@@ -20,7 +20,7 @@ const contactLinks = [
     name: "LinkedIn",
     value: "linkedin.com/in/ben-missi",
     icon: Link,
-    href: "www.linkedin.com/in/ben-missi-993269419",
+    href: "https://www.linkedin.com/in/ben-missi-993269419/?locale=fr",
   },
   {
     name: "CV / Resume",

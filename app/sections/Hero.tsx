@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Code2, FileText } from "lucide-react";
+import { ArrowDown, Code2, FileText, Link, Mail } from "lucide-react";
 import LaptopHero from "../components/LaptopHero";
 import DuckIcon from "../components/DuckIcon";
 
@@ -53,29 +53,47 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 2.0, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
+        className="relative z-10 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 mt-12 max-w-2xl px-4"
       >
         <a
           href="#projects"
-          className="group flex items-center gap-2 px-8 py-3 bg-red text-white rounded-full font-medium text-sm hover:bg-red-light transition-all duration-200"
+          className="group flex items-center gap-2 px-6 py-3 bg-red text-white rounded-full font-medium text-sm hover:bg-red-light transition-all duration-200"
         >
           View Projects
           <ArrowDown size={16} className="group-hover:translate-y-0.5 transition-transform" />
         </a>
         <a
-          href="https://github.com/serinenadabenmissi-design/portfolio.git"
+          href="https://github.com/serinenadabenmissi-design"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-8 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
+          className="flex items-center gap-2 px-6 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
         >
           <Code2 size={16} />
           GitHub
         </a>
         <a
-          href="mailto:benmissi.dev@gmail.com"
-          className="flex items-center gap-2 px-8 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
+          href="https://www.linkedin.com/in/ben-missi-993269419"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
+        >
+          <Link size={16} />
+          LinkedIn
+        </a>
+        <a
+          href="/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
         >
           <FileText size={16} />
+          CV
+        </a>
+        <a
+          href="mailto:benmissi.dev@gmail.com"
+          className="flex items-center gap-2 px-6 py-3 border border-red-muted rounded-full font-medium text-sm text-white hover:bg-red-muted/20 transition-all duration-200"
+        >
+          <Mail size={16} />
           Gmail
         </a>
       </motion.div>
