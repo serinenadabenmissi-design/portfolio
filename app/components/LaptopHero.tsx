@@ -74,7 +74,7 @@ export default function LaptopHero() {
                 >
                   <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
                   <span className="text-red-400 text-sm md:text-base font-mono">
-                    Software Engineering Student
+                    Full Stack Developer & AI Engineer
                   </span>
                 </motion.div>
 
