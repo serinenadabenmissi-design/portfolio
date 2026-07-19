@@ -1,36 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Portfolio — Serine Benmissi
 
-## Getting Started
+> Full Stack Developer & AI Engineer — Building systems that see, think, and decide.
 
-First, run the development server:
+[![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Live](https://img.shields.io/badge/Live-Deployed-00C7B7?logo=vercel&logoColor=white)](https://portfolio-inky-three-33.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**🚀 Live:** [portfolio-inky-three-33.vercel.app](https://portfolio-inky-three-33.vercel.app)
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Hero Section
+![Hero](https://raw.githubusercontent.com/serinenadabenmissi-design/portfolio/main/screenshots/portfolio-1-pro.png)
+
+### 📊 Dashboard / Projects Section
+![Dashboard](https://raw.githubusercontent.com/serinenadabenmissi-design/portfolio/main/screenshots/portfolio-dash.png)
+
+### 🦶 Footer
+![Footer](https://raw.githubusercontent.com/serinenadabenmissi-design/portfolio/main/screenshots/porftolio-footer.png)
+
+---
+
+## ✨ Features
+
+- 🎯 **Clean, Modern Design** — Minimalist aesthetic with smooth animations
+- 📱 **Fully Responsive** — Optimized for desktop, tablet, and mobile
+- ⚡ **Fast Loading** — Deployed on Vercel edge network
+- 🎨 **Custom Styling** — Hand-crafted CSS, no bloated frameworks
+- 🔗 **Project Showcases** — Direct links to live demos and GitHub repos
+- 📧 **Contact Integration** — Easy way for recruiters and clients to reach out
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React 18+ |
+| **Language** | JavaScript (ES6+) |
+| **Styling** | CSS3, Custom Properties |
+| **Deployment** | Vercel |
+| **Version Control** | Git, GitHub |
+| **Design Tool** | Cursor, GitHub Copilot |
+
+---
+
+## 🚀 Projects Showcased
+
+| Project | Tech | Live Demo | Repo |
+|---------|------|-----------|------|
+| **AI Nutritionist** | Python, Django, YOLOv8-seg | [Live](https://ai-nutritionist-lsha.onrender.com) | [GitHub](https://github.com/serinenadabenmissi-design/AI_nutritionist) |
+| **Fake News Detection** | Python, scikit-learn, NLTK | — | [GitHub](https://github.com/serinenadabenmissi-design/machine-learning-fake-news-detection) |
+| **Smart Pen** | ESP32, Arduino, scikit-learn | — | [GitHub](https://github.com/serinenadabenmissi-design/smart-pen-) |
+
+---
+
+## 🏗 Architecture
+
+```
+┌─────────────────┐
+│   Portfolio     │
+│   (React App)   │
+│                 │
+│ • Hero Section  │
+│ • About Me      │
+│ • Projects      │
+│ • Skills        │
+│ • Contact       │
+│ • Footer        │
+└─────────────────┘
+         │
+         ▼
+┌─────────────────┐
+│   Vercel CDN    │
+│   (Deployment)  │
+└─────────────────┘
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js 16+
+- npm or yarn
+- Git
 
-## Learn More
+### Clone Repository
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git clone https://github.com/serinenadabenmissi-design/portfolio.git
+cd portfolio
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Install Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm install
+```
 
-## Deploy on Vercel
+### Run Development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit `http://localhost:3000`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📂 Project Structure
+
+```
+portfolio/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── Hero.js
+│   │   ├── About.js
+│   │   ├── Projects.js
+│   │   ├── Skills.js
+│   │   ├── Contact.js
+│   │   └── Footer.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── screenshots/
+│   ├── portfolio-1-pro.png
+│   ├── portfolio-dash.png
+│   └── porftolio-footer.png
+├── package.json
+└── README.md
+```
+
+---
+
+## 🎨 Design Principles
+
+- **Minimalism** — Less clutter, more focus on work
+- **Typography** — Clean, readable fonts
+- **Color Palette** — Professional, not flashy
+- **Whitespace** — Breathing room between sections
+- **Animation** — Subtle, purposeful motion
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] **Dark Mode** — Toggle between light and dark themes
+- [ ] **Blog Section** — Technical writing and project deep-dives
+- [ ] **Testimonials** — Client and collaborator feedback
+- [ ] **Multi-language** — French and Arabic support
+- [ ] **Analytics** — Track visitor engagement
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📬 Contact
+
+**Serine Benmissi**
+
+- 📧 [benmissi.dev@gmail.com](mailto:benmissi.dev@gmail.com)
+- 💼 [linkedin.com/in/ben-missi-993269419](https://linkedin.com/in/ben-missi-993269419)
+- 🐱 [github.com/serinenadabenmissi-design](https://github.com/serinenadabenmissi-design)
+- 🌐 [Live Portfolio](https://portfolio-inky-three-33.vercel.app)
+
+**⭐ Star this repo if you like the design!**
